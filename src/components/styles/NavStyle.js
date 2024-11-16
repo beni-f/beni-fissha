@@ -22,8 +22,8 @@ export const NavStyle = styled.div`
 
     @media (max-width: 768px) {
         margin: 0 90px;   
-        width: 550px;
-        height: 50px;   
+        width: 75vw;
+        height: 7vh;   
         
         h3 {
             font-size: 15px;
