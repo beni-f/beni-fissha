@@ -21,16 +21,26 @@ export const NavStyle = styled.div`
     }
 
     @media (max-width: 768px) {
-        display: flex;
-        justify-content: space-between;
-        margin: 0 90px;   
-        width: 75vw;
-        height: 7vh;   
+        /* Adjusting for mobile devices */
+        margin: 0 20px;      /* Reduced margins */
+        width: 90vw;         /* Use 90% of the viewport width */
+        height: 10vh;        /* Height should scale with the viewport */
         
         h3 {
-            font-size: 15px;
+            font-size: 14px; /* Smaller font size for mobile */
             font-weight: 400;
             color: gray;
+        }
+    }
+
+    @media (max-width: 480px) {
+        /* Adjust further for very small screens */
+        margin: 0 10px;      /* Further reduced margin */
+        width: 85vw;         /* Further reduced width */
+        height: 8vh;         /* Even smaller height */
+        
+        h3 {
+            font-size: 13px; /* Even smaller font size for very small screens */
         }
     }
 `
