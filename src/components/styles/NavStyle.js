@@ -21,6 +21,8 @@ export const NavStyle = styled.div`
     }
 
     @media (max-width: 768px) {
+        display: flex;
+        justify-content: space-between;
         margin: 0 90px;   
         width: 75vw;
         height: 7vh;   
