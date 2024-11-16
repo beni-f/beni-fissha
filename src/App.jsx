@@ -1,9 +1,15 @@
+import HomeLayout from "./components/HomeLayout"
+import NavLayout from "./components/NavLayout"
+import { GlobalStyle } from "./components/styles/Global"
 
 
 function App() {
-
   return (
-    <h1>Hello</h1>
+    <>
+      <GlobalStyle />
+      <NavLayout />
+      <HomeLayout />
+    </>
   )
 }
 
