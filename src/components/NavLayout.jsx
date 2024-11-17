@@ -1,4 +1,4 @@
-import { NavStyle } from "./styles/NavStyle";
+import { NavStyle} from "./styles/NavStyle";
 
 export default function NavLayout() {
     return (

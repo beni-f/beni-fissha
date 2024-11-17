@@ -5,40 +5,26 @@ export const NavStyle = styled.div`
     justify-content: space-around;
     position: fixed;
     align-items: center;
+    margin: 0 65vh;
     top: 15px;
-    margin: 0 360px;
-    width: 700px;
-    height: 50px;
+    width: 70vh;
+    height: 6vh;
     border: none;
     border-radius: 80px;
     background-color: white;
     margin-bottom: 100px;
     
     h3 {
-        font-size: 17px;
+        font-size: 14px;
         font-weight: 400;
         color: gray;
     }
 
-    @media (max-width: 768px) {
-        margin: 0 90px;
-        width: 75vw;
-        height: 7vh;
-        
-        h3 {
-            font-size: 14px;
-            font-weight: 400;
-            color: gray;
-        }
-    }
-
-    @media (max-width: 480px) {
-        margin: 0;      /* Further reduced margin */
-        background-color: red;       /* Further reduced width */
-        height: 8vh;         /* Even smaller height */
-        
-        h3 {
-            font-size: 13px;
-        }
+    @media (min-width: 320px) and (max-width: 540px) {
+        margin: 0;
+        width: 100%;
+        top: 0;
+        border-radius: 0;
+        padding: 30px 25px;   
     }
 `
