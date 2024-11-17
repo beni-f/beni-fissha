@@ -7,7 +7,8 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: 'Roboto', sans-serif;
-        background: linear-gradient(90.6deg, rgb(245, 239, 249) 30.1%, rgb(207, 211, 236) 390.2%);
+        background: rgb(235,230,230);
+        background: radial-gradient(circle, rgba(235,230,230,1) 43%, rgba(209,189,237,1) 100%);
         margin: 0;
         width: 100%;
     }
