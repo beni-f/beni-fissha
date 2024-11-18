@@ -1,15 +1,15 @@
 import { HomeStyle } from "./styles/HomeStyle";
 import ProfileImage from './images/profile1.png'
 import styled from "styled-components";
-import { FaArrowRight } from "react-icons/fa";
-import LinkedinProfile from './images/linkedin.png'
+import { FaArrowRight, FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import GithubProfile from './images/github.png'
 
 
-const ImageBorder = styled.div`
+const ImageContainer = styled.div`
     margin: 0;
     border: solid 8px white;
-    border-radius: 1000px;
+    border-radius: 100%;
     overflow: hidden;
     display: inline-block;
     width: 100px;
@@ -22,24 +22,72 @@ const ImageBorder = styled.div`
     }
 `
 
-const ContactStyle = styled.div`
+const TextContainer = styled.div`
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 200px; 
+    margin-bottom: 10px;
+
+    p {
+        white-space: nowrap;
+    }
+
+    @media (max-width: 940px) {
+        padding: 0 100px;
+    }
+
+    @media (max-width: 690px) {
+        padding: 0 50px;
+    }
+
+    @media (max-width: 600px) {
+        padding: 0;
+    }
+`;
+
+
+const ContactContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
 
+    @media (max-width: 640px) {
+        flex-direction: column;
+        margin-bottom: 18px;
+        gap: 35px;
+    }
+
+
     button {
+        display: inline-block;
         transition: transform 0.3s ease;
         margin-left: 20px;
     }
 
     .contactButton {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         color: white;
         background-color: #080b1c;
-        padding: 15px 30px;
+        padding: 0 25px;
+        height: 52px;
         border: none;
         border-radius: 25px;
-        font-size: 20px;
+        
+
+        p {
+            font-size: 20px;
+            margin-right: 10px;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 640px) {
+            transform: scale(1.2)
+        }
     }
 
     .downloadButton {
@@ -49,70 +97,62 @@ const ContactStyle = styled.div`
         padding: 15px 30px;
         border-radius: 25px;
         font-size: 20px;
+        white-space: nowrap;
+
+        @media (max-width: 640px) {
+            transform: scale(1.3);
+        }
     }
 
     .linkedinProfile {
         border: none;
-        border-radius: 50px;
-        width: 70px;
+        border-radius: 70px;
+        padding: 8px 10px;
+
+        @media (max-width: 640px) {
+            transform: scale(1.3);
+        }
     }
 
     .githubProfile {
         border: none;
-        border-radius: 50px;
-        width: 70px;
+        border-radius: 70px;
+        padding: 8px 10px;
+
+        @media (max-width: 640px) {
+            transform: scale(1.3);
+        }
     }
 
     button:hover {
         transform: scale(1.1)
     }
 
-    @media (max-width: 768px) {
-        .contactButton {
-            padding: 15px 30px;
-            border-radius: 25px;
-            font-size: 20px;
-        }
 
-        .downloadButton {
-            padding: 15px 30px;
-            border-radius: 25px;
-            font-size: 17px;
-        }
-
-        .linkedinProfile {
-            border-radius: 70px;
-            width: 50px;
-        }
-
-        .githubProfile {
-            border-radius: 70px;
-        }
-
-    }
 `
 
 export default function HomeLayout() {
     return (
         <HomeStyle>
-            <ImageBorder>
+            <ImageContainer>
                 <img src={ProfileImage} alt="" />
-            </ImageBorder>
-            <div>
+            </ImageContainer>
+            <TextContainer>
                 <h1>Hello, I'm Beni. <span>I'm a</span> full-stack developer. <span>I enjoy making digital ideas come to life!</span></h1>
-            </div>
-            <ContactStyle>
+            </TextContainer>
+            <ContactContainer>
                 <button className="contactButton">
-                    Contact me here <FaArrowRight/>
+                    <p>Contact me here</p>
+                    <FaArrowRight/>
                 </button>
                 <button className="downloadButton">Download CV </button>
                 <button className="linkedinProfile">
-                    <img src={LinkedinProfile} alt="Linkedin Profile" />
+                    <FaLinkedin size={25}/>
                 </button>
                 <button className="githubProfile">
-                    <img src={GithubProfile} alt="" />
+                    <FaGithub size={25} />
                 </button>
-            </ContactStyle>
+            </ContactContainer>
         </HomeStyle>
     )
 }

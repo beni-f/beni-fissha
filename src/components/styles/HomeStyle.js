@@ -4,7 +4,8 @@ export const HomeStyle = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 150px 120px;
+    justify-content: center;
+    padding: 150px 0px;
 
     
     img {
@@ -15,7 +16,6 @@ export const HomeStyle = styled.div`
 
     h1 {
         font-size: 40px;
-        margin-left: 200px;
         text-align: center;
     }
 
@@ -25,7 +25,6 @@ export const HomeStyle = styled.div`
     }
 
     @media (max-width: 768px) {
-        margin: 130px 50px;
         h1 {
             font-size: 37px;
             margin-left: 0px;
