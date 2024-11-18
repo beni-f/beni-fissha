@@ -1,4 +1,3 @@
-import { Theme } from "@radix-ui/themes"
 import HomePage from "./components/HomePage"
 import NavLayout from "./components/NavLayout"
 import AboutPage from "./components/AboutPage"
