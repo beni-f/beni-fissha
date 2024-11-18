@@ -11,7 +11,6 @@ export const NavStyle = styled.div`
     
     border-radius: 80px;
     background-color: white;
-    flex-wrap: wrap;
     
     
 
@@ -62,6 +61,7 @@ export const NavItem = styled.h3`
 export const NavContainer = styled.div`
     display: flex;
     justify-content: center;
+    z-index: 1000;
 
     @media (min-width: 320px) and (max-width: 640px) {
         position: fixed;
