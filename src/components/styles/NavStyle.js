@@ -2,16 +2,17 @@ import styled from 'styled-components'
 
 export const NavStyle = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     position: fixed;
     align-items: center;
-    top: 15px;
-    width: 70vh;
-    height: 6vh;
+    padding: 0 10px;
+    top: 25px;
+    width: 80vh;
+    height: 6.5vh;
     border: none;
     border-radius: 80px;
     background-color: white;
-    margin-bottom: 100px;
+    box-shadow: 5px 5px 5px rgba(0.1, 0.1, 0, 0.2);
 
     @media (min-width: 320px) and (max-width: 640px) {
         margin: 0;
@@ -31,10 +32,12 @@ export const NavStyle = styled.div`
 
 
 export const NavItem = styled.h3`
-    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
     padding: 4px 10px;
     border-radius: 15px;
-    margin: 0;
+    margin-left: 20px;
 
     color: ${({ isActive }) => (isActive ? 'black' : 'gray')};
     font-weight: ${({isActive}) => isActive ? 500: 400};

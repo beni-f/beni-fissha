@@ -3,7 +3,7 @@ import ProfileImage from './images/profile1.png'
 import styled from "styled-components";
 import { FaArrowRight, FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import GithubProfile from './images/github.png'
+import React from 'react'
 
 
 const ImageContainer = styled.div`
@@ -106,6 +106,7 @@ const ContactContainer = styled.div`
 
     .linkedinProfile {
         border: none;
+        background-color: white;
         border-radius: 70px;
         padding: 8px 10px;
 
@@ -116,6 +117,7 @@ const ContactContainer = styled.div`
 
     .githubProfile {
         border: none;
+        background-color: white;
         border-radius: 70px;
         padding: 8px 10px;
 
@@ -131,14 +133,14 @@ const ContactContainer = styled.div`
 
 `
 
-export default function HomeLayout() {
+export default function HomePage() {
     return (
         <HomeStyle>
             <ImageContainer>
                 <img src={ProfileImage} alt="" />
             </ImageContainer>
             <TextContainer>
-                <h1>Hello, I'm Beni. <span>I'm a</span> full-stack developer. <span>I enjoy making digital ideas come to life!</span></h1>
+                <h1>Hello, I'm Beni. <span>I'm a</span> full-stack developer. <span>I enjoy making digital ideas come to life!</span> I enjoy building sites & apps. My focus is React (Next.js).</h1>
             </TextContainer>
             <ContactContainer>
                 <button className="contactButton">
@@ -147,12 +149,16 @@ export default function HomeLayout() {
                 </button>
                 <button className="downloadButton">Download CV </button>
                 <button className="linkedinProfile">
-                    <FaLinkedin size={25}/>
+                    
+                        <FaLinkedin size={25}/>
+                    
                 </button>
                 <button className="githubProfile">
                     <FaGithub size={25} />
                 </button>
+                
             </ContactContainer>
+            
         </HomeStyle>
     )
 }

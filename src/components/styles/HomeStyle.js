@@ -5,8 +5,10 @@ export const HomeStyle = styled.div`
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 150px 0px;
-
+    padding: 120px 0px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(212,194,226,1) 87%);
+    
     
     img {
         height: 100%;
@@ -17,6 +19,7 @@ export const HomeStyle = styled.div`
     h1 {
         font-size: 40px;
         text-align: center;
+        font-weight: 600;
     }
 
     span {
@@ -26,7 +29,8 @@ export const HomeStyle = styled.div`
 
     @media (max-width: 768px) {
         h1 {
-            font-size: 37px;
+            font-size: 28px;
+            padding: 0 50px;
             margin-left: 0px;
             text-align: center;
         }
