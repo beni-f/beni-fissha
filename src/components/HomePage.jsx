@@ -150,11 +150,11 @@ export default function HomePage() {
                 <button className="downloadButton">Download CV </button>
                 <button className="linkedinProfile">
                     
-                        <FaLinkedin size={25}/>
+                        <FaLinkedin size={25} color="black"/>
                     
                 </button>
                 <button className="githubProfile">
-                    <FaGithub size={25} />
+                    <FaGithub size={25} color="black"/>
                 </button>
                 
             </ContactContainer>
