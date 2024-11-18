@@ -8,6 +8,7 @@ export const NavStyle = styled.div`
     align-items: center;
     top: 25px;
     width: 36rem;
+    box-shadow: 5px 5px 5px rgba(0.1, 0.1, 0, 0.2);
     
     border-radius: 80px;
     background-color: white;
