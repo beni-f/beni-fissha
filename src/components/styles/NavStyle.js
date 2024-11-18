@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 
 export const NavStyle = styled.div`
+    border: none;
     display: flex;
     justify-content: space-between;
     position: fixed;
     align-items: center;
     top: 25px;
-    width: 80vh;
-    height: 6.5vh;
-    border: none;
+    width: 36rem;
+    
     border-radius: 80px;
     background-color: white;
     flex-wrap: wrap;
@@ -18,15 +18,8 @@ export const NavStyle = styled.div`
     @media (min-width: 320px) and (max-width: 640px) {
         top: 0;
         border-radius: 0;
-        min-width: 100%;
         width: 100%;
-        height: 12vh;
-    }
-
-    @media (min-width: 640px) and (max-width: 1400px) {
-        margin: 0 auto;
-        padding: 0 10px;
-        box-shadow: 5px 5px 5px rgba(0.1, 0.1, 0, 0.2);
+        height: 5rem;
     }
 `;
 
@@ -56,6 +49,14 @@ export const NavItem = styled.h3`
         margin-left: 20px;
     }
 
+    @media (max-width: 640px) {
+        top: 0;
+        margin: 0;
+        height: 2rem;
+        padding: 4px 5px;
+        margin-left: 20px;
+    }
+
 `
 
 export const NavContainer = styled.div`
@@ -63,12 +64,10 @@ export const NavContainer = styled.div`
     justify-content: center;
 
     @media (min-width: 320px) and (max-width: 640px) {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        justify-items: center;
-        border: solid;
+        position: fixed;
+        top: 15px;
+        height: 5rem;
+        width: 100%;
         flex-wrap: wrap;
-        margin: 0 auto;
-        gap: 0%;
     }
 `

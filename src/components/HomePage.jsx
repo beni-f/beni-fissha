@@ -94,8 +94,8 @@ const ContactContainer = styled.div`
         color: black;
         background-color: white;
         border: none;
-        padding: 15px 30px;
-        border-radius: 25px;
+        padding: 15px 35px;
+        border-radius: 30px;
         font-size: 20px;
         white-space: nowrap;
 
@@ -140,7 +140,7 @@ export default function HomePage() {
                 <img src={ProfileImage} alt="" />
             </ImageContainer>
             <TextContainer>
-                <h1>Hello, I'm Beni. <span>I'm a</span> full-stack developer. <span>I enjoy making digital ideas come to life!</span> I enjoy building sites & apps. My focus is React (Next.js).</h1>
+                <h1>Hello, I'm Beni. <span>I'm a</span> full-stack developer. <span>I enjoy making digital ideas come to life!</span></h1>
             </TextContainer>
             <ContactContainer>
                 <button className="contactButton">

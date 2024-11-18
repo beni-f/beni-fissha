@@ -30,7 +30,7 @@ export const HomeStyle = styled.div`
     @media (max-width: 768px) {
         h1 {
             font-size: 28px;
-            padding: 0 50px;
+            padding: 0 6rem;
             margin-left: 0px;
             text-align: center;
         }
