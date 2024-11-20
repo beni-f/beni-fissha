@@ -5,6 +5,7 @@ export const AboutStyle = styled.div`
     flex-direction: column;
     justify-content: center;
     padding: 0 200px;
+    margin-bottom: 100px;
 
     @media (min-width: 340px) and (max-width: 540px) {
         padding: 0;

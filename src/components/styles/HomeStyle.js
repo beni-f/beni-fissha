@@ -27,10 +27,10 @@ export const HomeStyle = styled.div`
         font-style: italic;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 640px) {
         h1 {
             font-size: 28px;
-            padding: 0 6rem;
+            padding: 0 2rem;
             margin-left: 0px;
             text-align: center;
         }

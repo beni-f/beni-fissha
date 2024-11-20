@@ -1,6 +1,7 @@
 import HomePage from "./components/HomePage"
 import NavLayout from "./components/NavLayout"
 import AboutPage from "./components/AboutPage"
+import ProjectPage from "./components/ProjectPage"
 import { GlobalStyle } from "./components/styles/Global"
 import React from 'react'
 
@@ -12,6 +13,7 @@ function App() {
       <NavLayout />
       <HomePage />
       <AboutPage />
+      <ProjectPage />
     </>
   )
 }
