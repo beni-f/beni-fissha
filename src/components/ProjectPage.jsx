@@ -39,7 +39,7 @@ export default function ProjectPage() {
                     <div>
 
                     </div> */}
-                    <h3>In progress, please come back later...</h3>
+                    
                 </div>
                 <div>
                 
