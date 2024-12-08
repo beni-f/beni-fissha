@@ -34,11 +34,12 @@ export default function ProjectPage() {
 
             <ProjectContainer>
                 <div className="about-project">
-                    <h1>UrbanShop</h1>
+                    {/* <h1>UrbanShop</h1>
                     <p>A simple e-commerce web app that I've made.ashfiosufdsdfsdofisdffajsidfsdfhsdhsdfw8oehgawe8</p>
                     <div>
 
-                    </div>
+                    </div> */}
+                    <h3>In progress, please come back later...</h3>
                 </div>
                 <div>
                 
